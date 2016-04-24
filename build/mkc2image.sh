@@ -6,6 +6,7 @@ FIRMWAREDIR=$PWD
 
 # Set this based on how many CPUs you have
 JFLAG=-j2
+#JFLAG=-j1
 
 # Where to put your build objects, you need write access
 export MAKEOBJDIRPREFIX=${HOME}/obj
@@ -19,9 +20,9 @@ set -e
 cd /usr/src
 
 #make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
-make TARGET=arm64 -s ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2
+make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
 
-exit 0
+#exit 0
 
 mkdir -p ${DEST}/root
 make TARGET=arm64 -s -DNO_ROOT installworld distribution installkernel \
@@ -43,10 +44,10 @@ mkimg -s bsd -p freebsd-ufs:=${DEST2}/ufs.img -o ${DEST2}/ufs_part.img
 
 newfs_msdos -C 128m -F 16 ${DEST2}/fat.img
 
-rm -f ${DEST2}/odroidc2.dtb
-cp ${DEST}/root/boot/dtb/odroidc2.dtb ${DEST2}/odroidc2.dtb
-mcopy -i ${DEST2}/fat.img ${DEST2}/odroidc2.dtb  ::
-mcopy -i ${DEST2}/fat.img ${FIRMWAREDIR}/uEnv.txt ::
+#rm -f ${DEST2}/odroidc2.dtb
+#cp ${DEST}/root/boot/dtb/odroidc2.dtb ${DEST2}/odroidc2.dtb
+#mcopy -i ${DEST2}/fat.img ${DEST2}/odroidc2.dtb  ::
+#mcopy -i ${DEST2}/fat.img ${FIRMWAREDIR}/uEnv.txt ::
 mcopy -i ${DEST2}/fat.img ${DEST}/root/boot/kernel/kernel ::
 
 bl1_position=1  # sector
