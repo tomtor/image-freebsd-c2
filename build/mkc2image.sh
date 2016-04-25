@@ -19,7 +19,7 @@ set -e
 
 cd /usr/src
 
-#make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
+make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
 make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
 
 #exit 0
@@ -44,11 +44,13 @@ mkimg -s bsd -p freebsd-ufs:=${DEST2}/ufs.img -o ${DEST2}/ufs_part.img
 
 newfs_msdos -C 128m -F 16 ${DEST2}/fat.img
 
-#rm -f ${DEST2}/odroidc2.dtb
-#cp ${DEST}/root/boot/dtb/odroidc2.dtb ${DEST2}/odroidc2.dtb
-#mcopy -i ${DEST2}/fat.img ${DEST2}/odroidc2.dtb  ::
+rm -f ${DEST2}/odroidc2.dtb
+cp ${DEST}/root/boot/dtb/odroidc2.dtb ${DEST2}/odroidc2.dtb
+mcopy -i ${DEST2}/fat.img ${DEST2}/odroidc2.dtb  ::
 #mcopy -i ${DEST2}/fat.img ${FIRMWAREDIR}/uEnv.txt ::
 mcopy -i ${DEST2}/fat.img ${DEST}/root/boot/kernel/kernel ::
+objcopy -O binary ${DEST}/root/boot/kernel/kernel ${DEST2}/kernel.bin
+mcopy -i ${DEST2}/fat.img ${DEST2}/kernel.bin ::
 
 bl1_position=1  # sector
 uboot_position=97  # sector
