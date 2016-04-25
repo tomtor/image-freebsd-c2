@@ -54,7 +54,7 @@ bl1_position=1  # sector
 uboot_position=97  # sector
 uboot_env=1440  # sector
 
-mkimg -s mbr -b bootcode.bin -p prepboot:-'dd if=/dev/zero bs=512 count=2047' -p fat16b:=${DEST2}/fat.img -p freebsd:=${DEST2}/ufs_part.img \
+mkimg -s mbr -b ${FIRMWAREDIR}/bootcode.bin -p prepboot:-'dd if=/dev/zero bs=512 count=2047' -p fat16b:=${DEST2}/fat.img -p freebsd:=${DEST2}/ufs_part.img \
     -o ${DEST2}/c2.img
 
 # See http://odroid.com/dokuwiki/doku.php?id=en:c2_partition_table
