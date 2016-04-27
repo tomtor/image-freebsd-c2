@@ -19,8 +19,8 @@ set -e
 
 cd /usr/src
 
-make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
-make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
+#make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
+#make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
 
 #exit 0
 
@@ -55,7 +55,7 @@ objcopy -O binary ${DEST}/root/boot/kernel/kernel ${DEST2}/kernel.bin
 mcopy -i ${DEST2}/fat.img ${DEST2}/kernel.bin ::
 mkimage -A arm -O linux -T kernel -a 0x11000000 -e 0x11001000 -d ${DEST}/root/boot/kernel/kernel ${DEST2}/Ukernel
 mcopy -i ${DEST2}/fat.img ${DEST2}/Ukernel ::
-./arm64hdr.sh ${DEST2}/kernel.bin > ${DEST2}/Ikernel
+${FIRMWAREDIR}/arm64hdr.sh ${DEST2}/kernel.bin > ${DEST2}/Ikernel
 mcopy -i ${DEST2}/fat.img ${DEST2}/Ikernel ::
 
 bl1_position=1  # sector
