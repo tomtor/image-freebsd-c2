@@ -53,8 +53,10 @@ mcopy -i ${DEST2}/fat.img ${DEST}/root/boot/fbsdboot.bin ::
 rm -f ${DEST2}/kernel.bin
 objcopy -O binary ${DEST}/root/boot/kernel/kernel ${DEST2}/kernel.bin
 mcopy -i ${DEST2}/fat.img ${DEST2}/kernel.bin ::
-mkimage -A arm -O linux -T kernel -a 0x100000 -e 0x101000 -d ${DEST}/root/boot/kernel/kernel ${DEST2}/Ukernel
+mkimage -A arm -O linux -T kernel -a 0x11000000 -e 0x11001000 -d ${DEST}/root/boot/kernel/kernel ${DEST2}/Ukernel
 mcopy -i ${DEST2}/fat.img ${DEST2}/Ukernel ::
+./arm64hdr.sh ${DEST2}/kernel.bin > ${DEST2}/Ikernel
+mcopy -i ${DEST2}/fat.img ${DEST2}/Ikernel ::
 
 bl1_position=1  # sector
 uboot_position=97  # sector
