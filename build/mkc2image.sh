@@ -25,8 +25,7 @@ make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES
 #exit 0
 
 mkdir -p ${DEST}/root
-make TARGET=arm64 -s -DNO_ROOT installworld distribution installkernel \
-     DESTDIR=${DEST}/root KERNCONF=ODROIDC2
+make TARGET=arm64 -s -DNO_ROOT installworld distribution installkernel DESTDIR=${DEST}/root KERNCONF=ODROIDC2
 
 echo "/dev/mmcsd0s3a / ufs rw,noatime 0 0" > ${DEST}/root/etc/fstab
 echo "./etc/fstab type=file uname=root gname=wheel mode=0644" >> ${DEST}/root/METALOG
@@ -47,10 +46,15 @@ newfs_msdos -C 128m -F 16 ${DEST2}/fat.img
 rm -f ${DEST2}/odroidc2.dtb
 cp ${DEST}/root/boot/dtb/odroidc2.dtb ${DEST2}/odroidc2.dtb
 mcopy -i ${DEST2}/fat.img ${DEST2}/odroidc2.dtb  ::
+mcopy -i ${DEST2}/fat.img ${FIRMWAREDIR}/boot.ini  ::
 #mcopy -i ${DEST2}/fat.img ${FIRMWAREDIR}/uEnv.txt ::
 mcopy -i ${DEST2}/fat.img ${DEST}/root/boot/kernel/kernel ::
+mcopy -i ${DEST2}/fat.img ${DEST}/root/boot/fbsdboot.bin ::
+rm -f ${DEST2}/kernel.bin
 objcopy -O binary ${DEST}/root/boot/kernel/kernel ${DEST2}/kernel.bin
 mcopy -i ${DEST2}/fat.img ${DEST2}/kernel.bin ::
+mkimage -A arm -O linux -T kernel -a 0x100000 -e 0x101000 -d ${DEST}/root/boot/kernel/kernel ${DEST2}/Ukernel
+mcopy -i ${DEST2}/fat.img ${DEST2}/Ukernel ::
 
 bl1_position=1  # sector
 uboot_position=97  # sector
