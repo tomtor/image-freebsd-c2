@@ -20,7 +20,7 @@ set -e
 cd /usr/src
 
 #make TARGET=arm64 -s ${JFLAG} buildworld NO_CLEAN=YES
-#make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
+make TARGET=arm64 ${JFLAG} buildkernel NO_CLEAN=YES KERNCONF=ODROIDC2 NO_MODULES=YES
 
 #exit 0
 
