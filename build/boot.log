@@ -1,437 +1,152 @@
-db> GXBB:BL1:08dafd:0a8993;FEAT:EDFC318C;POC:3;RCY:0;EMMC:800;NAND:81;SD:0;READ:
-0;CHK:0;
-TE: 116762
-no sdio debug board detected 
-
-BL2 Built : 11:44:26, Nov 25 2015. 
-gxb gfb13a3b-c2 - jcao@wonton
-
-Board ID = 8
-set vcck to 1100 mv
-set vddee to 1050 mv
-CPU clk: 1536MHz
-DDR channel setting: DDR0 Rank0+1 same
-DDR0: 2048MB(auto) @ 912MHz(2T)-13
-DataBus test pass!
-AddrBus test pass!
-Load fip header from SD, src: 0x0000c200, des: 0x01400000, size: 0x000000b0
-Load bl30 from SD, src: 0x00010200, des: 0x01000000, size: 0x00009ef0
-Sending bl30........................................OK. 
-Run bl30...
-Load bl301 from SD, src: 0x0001c200, des: 0x01000000, size: 0x00001690
-Wait bl30...Done
-Sending bl301......OK. 
-Run bl301...
-l31 from SD, src: 0x00020200, des: 0x10100000, size: 0x00011130
-
-
---- UART initialized after reboot ---
-[Reset cause: unknown]
-[Image: unknown, amlogic_v1.1.3046-00db630 2015-10-28 15:24:31 xiaobo.gu@droid05
-]
-bl30: check_permit, count is 1
-bl30: check_permit: ok!
-chipid: ef be ad de Load bl33 from SD, src: 0x00034200, des: 0x01000000, size: 0
-x00065050
-d f0 ad ba ef be ad de not ES chip
-[0.231380 Inits done]
-secure task start!
-high task start!
-low task start!
-NOTICE:  BL3-1: v1.0(debug):4d2e34d
-NOTICE:  BL3-1: Built : 17:08:35, Oct 29 2015
-INFO:    BL3-1: Initializing runtime services
-INFO:    BL3-1: Preparing for EL3 exit to normal world
-INFO:    BL3-1: Next image address = 0x1000000
-INFO:    BL3-1: Next image spsr = 0x3c9
-
-
-U-Boot 2015.01-g7485279-dirty (Apr 30 2016 - 18:08:03)
-
-DRAM:  2 GiB
-Relocation Offset is: 76f41000
--------------------------------------------------
-* Welcome to Hardkernel's ODROID-C2
--------------------------------------------------
-CPU : AMLogic S905
-S/N : HKC11122F37E48FE
-MAC : 00:1e:06:10:6c:7e
-BID : HKC1311604
--------------------------------------------------
-register usb cfg[1][0] = 0000000077f98868
-register usb cfg[0][1] = 0000000077f98888
-vpu detect type: 5
-vpu clk_level = 7
-set vpu clk: 666667000Hz, readback: 666660000Hz(0x300)
-MMC:   aml_priv->desc_buf = 0x0000000073f39d30
-aml_priv->desc_buf = 0x0000000073f3bec0
-SDIO Port B: 0, SDIO Port C: 1
-ret = 1 .GXBB:BL1:08dafd:0a8993;FEAT:EDFC318C;POC:3;RCY:0;EMMC:800;NAND:81;SD:0;
-READ:0;CHK:0;
-TE: 115924
-no sdio debug board detected 
-
-BL2 Built : 11:44:26, Nov 25 2015. 
-gxb gfb13a3b-c2 - jcao@wonton
-
-Board ID = 8
-set vcck to 1100 mv
-set vddee to 1050 mv
-CPU clk: 1536MHz
-DDR channel setting: DDR0 Rank0+1 same
-DDR0: 2048MB(auto) @ 912MHz(2T)-13
-DataBus test pass!
-AddrBus test pass!
-Load fip header from SD, src: 0x0000c200, des: 0x01400000, size: 0x000000b0
-Load bl30 from SD, src: 0x00010200, des: 0x01000000, size: 0x00009ef0
-Sending bl30........................................OK. 
-Run bl30...
-Load bl301 from SD, src: 0x0001c200, des: 0x01000000, size: 0x00001690
-Wait bl30...Done
-Sending bl301......OK. 
-Run bl301...
-m SD, src: 0x00020200, des: 0x10100000, size: 0x00011130
-
-
---- UART initialized after reboot ---
-[Reset cause: unknown]
-[Image: unknown, amlogic_v1.1.3046-00db630 2015-10-28 15:24:31 xiaobo.gu@droid05
-]
-bl30: check_permit, count is 1
-bl30: check_permit: ok!
-chipid: ef be ad de Load bl33 from SD, src: 0x00034200, des: 0x01000000, size: 0
-x00065050
-d f0 ad ba ef be ad de not ES chip
-[0.230461 Inits done]
-secure task start!
-high task start!
-low task start!
-NOTICE:  BL3-1: v1.0(debug):4d2e34d
-NOTICE:  BL3-1: Built : 17:08:35, Oct 29 2015
-INFO:    BL3-1: Initializing runtime services
-INFO:    BL3-1: Preparing for EL3 exit to normal world
-INFO:    BL3-1: Next image address = 0x1000000
-INFO:    BL3-1: Next image spsr = 0x3c9
-
-
-U-Boot 2015.01-g7485279-dirty (Apr 30 2016 - 18:08:03)
-
-DRAM:  2 GiB
-Relocation Offset is: 76f41000
--------------------------------------------------
-* Welcome to Hardkernel's ODROID-C2
--------------------------------------------------
-CPU : AMLogic S905
-S/N : HKC11122F37E48FE
-MAC : 00:1e:06:10:6c:7e
-BID : HKC1311604
--------------------------------------------------
-register usb cfg[1][0] = 0000000077f98868
-register usb cfg[0][1] = 0000000077f98888
-vpu detect type: 5
-vpu clk_level = 7
-set vpu clk: 666667000Hz, readback: 666660000Hz(0x300)
-MMC:   aml_priv->desc_buf = 0x0000000073f39d30
-aml_priv->desc_buf = 0x0000000073f3bec0
-SDIO Port B: 0, SDIO Port C: 1
-ret = 1 .[mmc_init] mmc init success
-In:    serial
-Out:   serial
-Err:   serial
-----------------------------------
-MMC Size : 16 GB
-----------------------------------
-** Unrecognized filesystem type **
-** Unrecognized filesystem type **
-movi: the partiton 'logo' is reading...
-
-MMC read: dev # 0, block # 58976, count 4096 ... 4096 blocks read: OK
-hpd_state=0
-[CANVAS]addr=0x3f800000 width=3840, height=1440
-
-Not find '576cvbs' mapped VIC
-Not find '576cvbs' mapped VIC
-Error: Bad gzipped data
-There is no valid bmp file at the given address
-Saving Environment to MMC...
-Writing to MMC(0)... done
-Net:   Meson_Ethernet
-Hit [Enter] key twice to stop autoboot:  0 
-Amlogic Ethernet Init
-Success: reset mac OK!(0)
-ETH PHY hardware reset OK
-find net phy id=0x1cc916, phyad=0
-set_mac_mode(2)
-final_addr[rx-tx]: 0000000073f69c10-0000000073f6a210
-Ethernet reset OK
-MAC address is 00:1e:06:10:6c:7e
-phy auto link failed
-duplex
-1000m
-Using Meson_Ethernet device
-TFTP from server 192.168.0.171; our IP address is 192.168.0.32
-Filename 'kernel'.
-Load address: 0x20000000
-Loading: duplex
-1000m
-duplex
-1000m
-#################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #################################################################
-         #####################
-         2.9 MiB/s
-done
-Bytes transferred = 8889736 (87a588 hex)
-## Starting application at 0x20001000 ...
-KDB: debugger backends: ddb
-KDB: current backend: ddb
-Copyright (c) 1992-2016 The FreeBSD Project.
-Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
-        The Regents of the University of California. All rights reserved.
-FreeBSD is a registered trademark of The FreeBSD Foundation.
-FreeBSD 11.0-CURRENT #179 c75e7be(tc2)-dirty: Sun May  1 22:12:20 CEST 2016
+Using Meson_Ethernet device                                                     
+TFTP from server 192.168.0.171; our IP address is 192.168.0.32                  
+Filename 'kernel'.                                                              
+Load address: 0x20000000                                                        
+Loading: duplex                                                                 
+1000m                                                                           
+#################################################################               
+         #################################################################      
+         #################################################################      
+         #################################################################      
+         #################################################################      
+         ###                                                                    
+         2.9 MiB/s                                                              
+done                                                                            
+Bytes transferred = 4811936 (496ca0 hex)                                        
+## Starting application at 0x20001000 ...                                       
+size 7f000000                                                                   
+pmap_bootstrap ffff000000004000 20000000 800000                                 
+ffff000000004000                                                                
+0                                                                               
+platform_devmap_init (cbus)                                                     
+Early printf yielding control to the real console.                              
+KDB: debugger backends: ddb                                                     
+KDB: current backend: ddb                                                       
+Found 1 CPUs in the device tree                                                 
+Copyright (c) 1992-2016 The FreeBSD Project.                                    
+Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994        
+        The Regents of the University of California. All rights reserved.       
+FreeBSD is a registered trademark of The FreeBSD Foundation.                    
+FreeBSD 11.0-CURRENT #478 01606fb(tc2): Fri May  6 12:17:26 CEST 2016           
     tom@bsd11.v7f.eu:/usr/home/tom/obj/arm64.aarch64/media/swan/github/freebsd/s
-ys/ODROIDC2 arm64
+ys/ODROIDC2 arm64                                                               
 FreeBSD clang version 3.8.0 (tags/RELEASE_380/final 262564) (based on LLVM 3.8.0
-)
-WARNING: WITNESS option enabled, expect reduced performance.
-module_register: cannot register simplebus/timer from kernel; already loaded fro
-m kernel
-Module simplebus/timer failed to register: 17
-Fix this HW: -1
-ULE: setup cpu 0
-random: entropy device external interface
-null: <full device, null device, zero device>
-openfirm: <Open Firmware control device>
-mem: <memory>
-nfslock: pseudo-device
-crypto: <crypto core>
-ACPI: Table initialisation failed: AE_NOT_FOUND
-ACPI: Try disabling either ACPI or apic support.
-random: harvesting attach, 8 bytes (4 bits) from nexus0
-ofwbus0: <Open Firmware Device Tree>
-simplebus0: <Flattened device tree simple bus> on ofwbus0
-random: harvesting attach, 8 bytes (4 bits) from simplebus0
-random: harvesting attach, 8 bytes (4 bits) from ofwbus0
-clkmsr0: <Amlogic aml8726 clkmsr> mem 0xc1108758-0xc1108767 on simplebus0
-clkmsr0: bus clock 167 MHz
-random: harvesting attach, 8 bytes (4 bits) from clkmsr0
-ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0
-ccm0: unsupported SoC
-device_attach: ccm0 attach returned 6
-pinctrl0: <Amlogic aml8726 pinctrl> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc1108
-0ff,0xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c
--0xc810002f on simplebus0
-pinctrl0: unsupported SoC
-device_attach: pinctrl0 attach returned 6
-gic0: <ARM Generic Interrupt Controller> mem 0xc4301000-0xc4301fff,0xc4300100-0x
-c43001ff on ofwbus0
-gic0: pn 0x0, arch 0x0, rev 0x0, implementer 0x0 irqs 256
-random: harvesting attach, 8 bytes (4 bits) from gic0
-ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0
-ccm0: unsupported SoC
-device_attach: ccm0 attach returned 6
-pinctrl0: <Amlogic aml8726 pinctrl> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc1108
-0ff,0xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c
--0xc810002f on simplebus0
-pinctrl0: unsupported SoC
-device_attach: pinctrl0 attach returned 6
-wdt0: <Amlogic aml8726 WDT> mem 0xc1109900-0xc1109907 irq 32 on simplebus0
-random: harvesting attach, 8 bytes (4 bits) from wdt0
-ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0
-ccm0: unsupported SoC
-device_attach: ccm0 attach returned 6
-pinctrl0: <Amlogic aml8726 pinctrl> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc1108
-0ff,0xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c
--0xc810002f on simplebus0
-pinctrl0: unsupported SoC
-device_attach: pinctrl0 attach returned 6
-ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0
-ccm0: unsupported SoC
-device_attach: ccm0 attach returned 6
-pinctrl0: <Amlogic aml8726 pinctrl> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc1108
-0ff,0xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c
--0xc810002f on simplebus0
-pinctrl0: unsupported SoC
-device_attach: pinctrl0 attach returned 6
+)                                                                               
+WARNING: WITNESS option enabled, expect reduced performance.                    
+Amlogic aml-s905 SoC                                                            
+FreeBSD/SMP: Multiprocessor System Detected: 1 CPUs                             
+ULE: setup cpu 0                                                                
+null: <full device, null device, zero device>                                   
+openfirm: <Open Firmware control device>                                        
+mem: <memory>                                                                   
+random: harvesting attach, 8 bytes (4 bits) from nexus0                         
+ofwbus0: <Open Firmware Device Tree>                                            
+simplebus0: <Flattened device tree simple bus> on ofwbus0                       
+random: harvesting attach, 8 bytes (4 bits) from simplebus0                     
+clk_fixed0: <Fixed clock> on ofwbus0                                            
+random: harvesting attach, 8 bytes (4 bits) from clk_fixed0                     
+random: harvesting attach, 8 bytes (4 bits) from ofwbus0                        
+clkmsr0: <Amlogic aml8726 clkmsr> mem 0xc1108758-0xc1108767 on simplebus0       
+clkmsr0: bus clock 167 MHz                                                      
+random: harvesting attach, 8 bytes (4 bits) from clkmsr0                        
+scu0: <ARM Snoop Control Unit> mem 0xc4300000-0xc4300fff on simplebus0          
+random: harvesting attach, 8 bytes (4 bits) from scu0                           
+cpuconfig0: <Amlogic CPU Config> mem 0xd901ff80-0xd901ff8f on simplebus0        
+random: harvesting attach, 8 bytes (4 bits) from cpuconfig0                     
+ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0             
+random: harvesting attach, 8 bytes (4 bits) from ccm0                           
+gic0: <ARM Generic Interrupt Controller> mem 0xc4301000-0xc4301fff,0xc4302000-0x
+c4303fff,0xc4304000-0xc4305fff,0xc4306000-0xc4307fff irq 41 on ofwbus0          
+arm_gic_fdt_attach                                                              
+gic0: pn 0x20, arch 0x2, rev 0x1, implementer 0x43b irqs 256                    
+random: harvesting attach, 8 bytes (4 bits) from gic0                           
+generic_timer0: <ARMv7 Generic Timer> irq 16,19,18 on ofwbus0                   
+ofwbus0: no default resources for rid = 3, type = 1                             
+Timecounter "ARM MPCore Timecounter" frequency 24000000 Hz quality 1000         
+Event timer "ARM MPCore Eventtimer" frequency 24000000 Hz quality 1000          
+random: harvesting attach, 8 bytes (4 bits) from generic_timer0                 
 ofwbus0: <l2-cache-controller@c4200000> mem 0xc4200000-0xc4200fff irq 175 compat
- arm,pl310-cache (no driver attached)
-ofwbus0: <timer@c1109940> mem 0xc1109940-0xc1109957 irq 42 compat amlogic,meson6
--timer (no driver attached)
-uart0: <Amlogiwart0: RTS iflow, CTS oflow
-uart0: fast interrupt
-uart0: PPS capture mode: DCDinvalid
-random: harvesting attach, 8 bytes (4 bits) from uart0
-uart1: <Amlogic aml8726 UART> mem 0xc11084c0-0xc11084d7 irq 58 on simplebus0
-uart1: RTS iflow, CTS oflow
-uart1: fast interrupt
-uart1: PPS capture mode: DCDinvalid
-random: harvesting attach, 8 bytes (4 bits) from uart1
-uart2: <Amlogic aml8726 UART> mem 0xc11084dc-0xc11084f3 irq 107 on simplebus0
-uart2: RTS iflow, CTS oflow
-uart2: fast interrupt
-uart2: PPS capture mode: DCDinvalid
-random: harvesting attach, 8 bytes (4 bits) from uart2
-uart3: <Amlogic aml8726 UART> mem 0xc1108700-0xc1108717 irq 125 on simplebus0
-uart3: RTS iflow, CTS oflow
-uart3: fast interrupt
-uart3: PPS capture mode: DCDinvalid
-random: harvesting attach, 8 bytes (4 bits) from uart3
+ arm,pl310-cache (no driver attached)                                           
+ofwbus0: <timer@c1109990> mem 0xc1109990-0xc11099a7 irq 92 compat amlogic,meson6
+-timer (no driver attached)                                                     
+simplebus0: <watchdog@c1109900> mem 0xc1109900-0xc1109907 irq 32 disabled compat
+ amlogic,meson6-wdt (no driver attached)                                        
+uart0: <Amlogiwart0: RTS iflow, CTS oflow                                       
+uart0: fast interrupt                                                           
+uart0: PPS capture mode: DCDinvalid                                             
+random: harvesting attach, 8 bytes (4 bits) from uart0                          
+simplebus0: <serial@c11084c0> mem 0xc11084c0-0xc11084d7 irq 58 disabled compat a
+mlogic,meson-uart (no driver attached)                                          
+simplebus0: <serial@c11084dc> mem 0xc11084dc-0xc11084f3 irq 107 disabled compat 
+amlogic,meson-uart (no driver attached)                                         
+simplebus0: <serial@c1108700> mem 0xc1108700-0xc1108717 irq 125 disabled compat 
+amlogic,meson-uart (no driver attached)                                         
 simplebus0: <i2c@c8100500> mem 0xc8100500-0xc810051f irq 124 disabled compat aml
-ogic,meson6-i2c (no driver attached)
-simplebus0: <i2c@c1108500> mem 0xc1108500-0xc110851f irq 53 compat amlogic,meson
-6-i2c (no driver attached)
-simplebus0: <i2c@c11087c0> mem 0xc11087c0-0xc11087df irq 160 compat amlogic,meso
-n6-i2c (no driver attached)
+ogic,meson6-i2c (no driver attached)                                            
+simplebus0: <i2c@c1108500> mem 0xc1108500-0xc110851f irq 53 disabled compat amlo
+gic,meson6-i2c (no driver attached)                                             
+simplebus0: <i2c@c11087c0> mem 0xc11087c0-0xc11087df irq 160 disabled compat aml
+ogic,meson6-i2c (no driver attached)                                            
 simplebus0: <ir-receiver@c8100480> mem 0xc8100480-0xc810049f irq 47 disabled com
-pat amlogic,meson6-ir (no driver attached)
+pat amlogic,meson6-ir (no driver attached)                                      
 simplebus0: <spi@c1108c80> mem 0xc1108c80-0xc1108cff disabled compat amlogic,mes
-on6-spifc (no driver attached)
+on6-spifc (no driver attached)                                                  
 simplebus0: <ethernet@c9410000> mem 0xc9410000-0xc941ffff,0xc1108108-0xc110810b 
-irq 40 disabled compat amlogic,meson6-dwmac (no driver attached)
-simplebus0: <scu@c4300000> mem 0xc4300000-0xc4300fff compat arm,cortex-a5-scu (n
-o driver attached)
-simplebus0: <cpuconfig@d901ff80> mem 0xd901ff80-0xd901ff8f compat amlogic,aml872
-6-cpuconfig (no driver attached)
-ccm0: <Amlogic aml8726 ccm> mem 0xc1104140-0xc1104153 on simplebus0
-ccm0: unsupported SoC
-device_attach: ccm0 attach returned 6
-pinctrl0: <Amlogic aml8726 pinctrl> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc1108
-0ff,0xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c
--0xc810002f on simplebus0
-pinctrl0: unsupported SoC
-device_attach: pinctrl0 attach returned 6
-rtc0: <Amlogic aml8726 RTC> mem 0xc8100740-0xc8100753 irq 104 on simplebus0
-rtc0: unsupported SoC
-device_attach: rtc0 attach returned 6
+irq 40 disabled compat amlogic,meson6-dwmac (no driver attached)                
+simplebus0: <pinctrl@c11080b0> mem 0xc11080b0-0xc11080d7,0xc11080e8-0xc11080ff,0
+xc1108120-0xc1108137,0xc8100014-0xc8100017,0xc810002c-0xc810002f,0xc810002c-0xc8
+10002f compat amlogic,aml8726-pinctrl (no driver attached)                      
+rtc0: <Amlogic aml8726 RTC> mem 0xc8100740-0xc8100753 irq 104 on simplebus0     
+rtc0: unsupported SoC                                                           
+device_attach: rtc0 attach returned 6                                           
 gpio0: <Amlogic aml8726 GPIO> mem 0xc8100024-0xc8100027,0xc8100024-0xc8100027,0x
-c8100028-0xc810002b on simplebus0
-gpiobus0: <OFW GPIO bus> on gpio0
-random: harvesting attach, 8 bytes (4 bits) from gpiobus0
-gpioc0: <GPIO controller> on gpio0
-random: harvesting attach, 8 bytes (4 bits) from gpioc0
-random: harvesting attach, 8 bytes (4 bits) from gpio0
+c8100028-0xc810002b on simplebus0                                               
+gpiobus0: <OFW GPIO bus> on gpio0                                               
+random: harvesting attach, 8 bytes (4 bits) from gpiobus0                       
+gpioc0: <GPIO controller> on gpio0                                              
+random: harvesting attach, 8 bytes (4 bits) from gpioc0                         
+random: harvesting attach, 8 bytes (4 bits) from gpio0                          
 gpio1: <Amlogic aml8726 GPIO> mem 0xc1108054-0xc1108057,0xc1108058-0xc110805b,0x
-c110805c-0xc110805f on simplebus0
-gpiobus1: <OFW GPIO bus> on gpio1
-random: harvesting attach, 8 bytes (4 bits) from gpiobus1
-gpioc1: <GPIO controller> on gpio1
-random: harvesting attach, 8 bytes (4 bits) from gpioc1
-random: harvesting attach, 8 bytes (4 bits) from gpio1
+c110805c-0xc110805f on simplebus0                                               
+gpiobus1: <OFW GPIO bus> on gpio1                                               
+random: harvesting attach, 8 bytes (4 bits) from gpiobus1                       
+gpioc1: <GPIO controller> on gpio1                                              
+random: harvesting attach, 8 bytes (4 bits) from gpioc1                         
+random: harvesting attach, 8 bytes (4 bits) from gpio1                          
 gpio2: <Amlogic aml8726 GPIO> mem 0xc110806c-0xc110806f,0xc1108070-0xc1108073,0x
-c1108074-0xc1108077 on simplebus0
-gpiobus2: <OFW GPIO bus> on gpio2
-random: harvesting attach, 8 bytes (4 bits) from gpiobus2
-gpioc2: <GPIO controller> on gpio2
-random: harvesting attach, 8 bytes (4 bits) from gpioc2
-random: harvesting attach, 8 bytes (4 bits) from gpio2
-aml8726_mmc0: <Amlogic aml8726 MMC> mem 0xc1108c20-0xc1108c3f irq 60 on simplebu
-s0
-mmc0: <MMC/SD bus> on aml8726_mmc0
-random: harvesting attach, 8 bytes (4 bits) from mmc0
-random: harvesting attach, 8 bytes (4 bits) from aml8726_mmc0
-aml8726_sdxc0: <Amlogic aml8726-m8 SDXC> mem 0xc1108e00-0xc1108e3b irq 110 on si
-mplebus0
-aml8726_sdxc0: unsupported SoC
-device_attach: aml8726_sdxc0 attach returned 6
-simplebus0: <rng@c1108100> mem 0xc1108100-0xc1108107 compat amlogic,aml8726-rng 
-(no driver attached)
-usbphy0: <Amlogic aml8726-m6 USB PHY> mem 0xc1108800-0xc110881f on simplebus0
-usbphy0: PHY Clock not detected
-random: harvesting attach, 8 bytes (4 bits) from usbphy0
-usbphy1: <Amlogic aml8726-m6 USB PHY> mem 0xc1108820-0xc110883f on simplebus0
-usbphy1: PHY Clock not detected
-random: harvesting attach, 8 bytes (4 bits) from usbphy1
-dwcotg0: <DWC OTG 2.0 integrated USB controller> mem 0xc9040000-0xc907ffff irq 6
-2 on simplebus0
-simplebus0: no default resources for rid = 1, type = 1
-device_attach: dwcotg0 attach returned 6
-dwcotg0: <DWC OTG 2.0 integrated USB controller> mem 0xc90c0000-0xc90fffff irq 6
-3 on simplebus0
-simplebus0: no default resources for rid = 1, type = 1
-device_attach: dwcotg0 attach returned 6
-simplebus0: <eth@c9410000> mem 0xc9410000-0xc9411fff irq 40 compat amlogic,meson
-6-dwmac (no driver attached)
+c1108074-0xc1108077 on simplebus0                                               
+gpiobus2: <OFW GPIO bus> on gpio2                                               
+random: harvesting attach, 8 bytes (4 bits) from gpiobus2                       
+gpioc2: <GPIO controller> on gpio2                                              
+random: harvesting attach, 8 bytes (4 bits) from gpioc2                         
+random: harvesting attach, 8 bytes (4 bits) from gpio2                          
+simplebus0: <mmc@c1108c20> mem 0xc1108c20-0xc1108c3f irq 60 disabled compat amlo
+gic,aml8726-mmc (no driver attached)                                            
+simplebus0: <sdxc@c1108e00> mem 0xc1108e00-0xc1108e3b irq 110 disabled compat am
+logic,aml8726-sdxc-m8 (no driver attached)                                      
+simplebus0: <rng@c1108100> mem 0xc1108100-0xc1108107 disabled compat amlogic,aml
+8726-rng (no driver attached)                                                   
+simplebus0: <usb-phy@c1108800> mem 0xc1108800-0xc110881f disabled compat amlogic
+,aml8726-m8-usb-phy (no driver attached)                                        
+simplebus0: <usb-phy@c1108820> mem 0xc1108820-0xc110883f disabled compat amlogic
+,aml8726-m8-usb-phy (no driver attached)                                        
+simplebus0: <usb@c9040000> mem 0xc9040000-0xc907ffff irq 62 disabled compat syno
+psys,designware-hs-otg2 (no driver attached)                                    
+simplebus0: <usb@c90c0000> mem 0xc90c0000-0xc90fffff irq 63 disabled compat syno
+psys,designware-hs-otg2 (no driver attached)                                    
+simplebus0: <eth@c9410000> mem 0xc9410000-0xc9411fff irq 40 disabled compat amlo
+gic,meson6-dwmac (no driver attached)                                           
 simplebus0: <fb@c8006020> mem 0xc8006048-0xc8006053,0xc1106800-0xc1106bff,0xc110
-7400-0xc11077ff irq 34,35,44,45 type display compat amlogic,aml8726-fb (no drive
-r attached)
-cpulist0: <Open Firmware CPU Group> on ofwbus0
-cpu0: <Open Firmware CPU> on cpulist0
-cpu0: missing 'clock-frequency' property
-random: harvesting attach, 8 bytes (4 bits) from cpu0
-random: harvesting attach, 8 bytes (4 bits) from cpulist0
-ofwbus0: <clk@0> compat fixed-clock (no driver attached)
-ofwbus0: <leds> compat gpio-leds (no driver attached)
-cryptosoft0: <software crypto>
-crypto: assign cryptosoft0 driver id 0, flags 100663296
-crypto: cryptosoft0 registers alg 1 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 2 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 3 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 4 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 5 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 16 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 6 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 7 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 18 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 19 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 20 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 8 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 15 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 9 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 10 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 13 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 14 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 11 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 22 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 23 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 25 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 24 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 26 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 27 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 28 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 21 flags 0 maxoplen 0
-crypto: cryptosoft0 registers alg 17 flags 0 maxoplen 0
-random: harvesting attach, 8 bytes (4 bits) from cryptosoft0
-Device configuration finished.
-procfs registered
-panic: No usable event timer found!
-KDB: stack backtrace:
-db_trace_self() at db_fetch_ksymtab+0x12c
-         pc = 0xffff0000004abb30  lr = 0xffff0000000776dc
-         sp = 0xffff0000000107f0  fp = 0xffff000000010a00
-
-db_fetch_ksymtab() at vpanic+0x9c
-         pc = 0xffff0000000776dc  lr = 0xffff000000216574
-         sp = 0xffff000000010a10  fp = 0xffff000000010a80
-
-vpanic() at panic+0x4c
-         pc = 0xffff000000216574  lr = 0xffff000000216654
-         sp = 0xffff000000010a90  fp = 0xffff000000010b10
-
-panic() at cpu_initclocks_bsp+0x3a0
-         pc = 0xffff000000216654  lr = 0xffff0000004c5b94
-         sp = 0xffff000000010b20  fp = 0xffff000000010b70
-
-cpu_initclocks_bsp() at profclock_cnt+0xd4
-         pc = 0xffff0000004c5b94  lr = 0xffff0000001ba9f8
-         sp = 0xffff000000010b80  fp = 0xffff000000010b80
-
-profclock_cnt() at mi_startup+0x120
-         pc = 0xffff0000001ba9f8  lr = 0xffff0000001b7b44
-         sp = 0xffff000000010b90  fp = 0xffff000000010bc0
-
-mi_startup() at _start+0x84
-         pc = 0xffff0000001b7b44  lr = 0xffff000000001084
-         sp = 0xffff000000010bd0  fp = 0x0000000000000000
-
-KDB: enter: panic
-[ thread pid 0 tid 100000 ]
-Stopped at      kdb_enter+0x40: undefined       d4200000
-db> 
+7400-0xc11077ff irq 34,35,44,45 disabled type display compat Xamlogic,aml8726-fb
+ (no driver attached)                                                           
+cpulist0: <Open Firmware CPU Group> on ofwbus0                                  
+cpu0: <Open Firmware CPU> on cpulist0                                           
+arm64_cpu0: register <200>                                                      
+random: harvesting attach, 8 bytes (4 bits) from arm64_cpu0                     
+random: harvesting attach, 8 bytes (4 bits) from cpu0                           
+random: harvesting attach, 8 bytes (4 bits) from cpulist0                       
+ofwbus0: <leds> compat Xgpio-leds (no driver attached)                          
+Device configuration finished.                                                  
+procfs registered                                                               
+Timecounters tick every 1.000 msec                                              
+tcp_init: net.inet.tcp.tcbhashsize auto tuned to 16384   
