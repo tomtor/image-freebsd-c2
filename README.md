@@ -14,9 +14,7 @@ just works out of the box. Interrupt the standard boot process by hitting "Enter
 setenv serverip A.B.C.D (The address of your (FreeBSD) TFTP server)
 setenv ipaddr D.E.F.G (The address of your C2)
 setenv bootcmd "tftp 0x20000000 kernel; go 0x20001000"
-```
-execute
-```
+
 saveenv
 ```
 and on the next reboot (just enter "reset") it will boot with TFTP.
